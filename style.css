@@ -13,6 +13,14 @@ body{
     height: 600px;
 }
 
+.grid{
+    background-color: black;
+    height: 450px;
+    width: 452px;
+    margin-right: -525px;
+    margin-top: 36px;
+}
+
 .controlers{
     display: flex;
     justify-content: space-between;
