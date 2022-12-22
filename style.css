@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.toy-body{
+    height: 600px;
+}
+
+.controlers{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -110px;
+}
+
+.left-controler,
+.right-controler{
+    height: 100px;
+}
