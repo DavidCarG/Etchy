@@ -14,9 +14,13 @@ body{
 }
 
 .grid{
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
     height: 450px;
-    width: 452px;
+    width: 450px;
     margin-right: -525px;
     margin-top: 36px;
 }
@@ -30,4 +34,12 @@ body{
 .left-controler,
 .right-controler{
     height: 100px;
+}
+
+.row{
+    display: flex;
+}
+
+.square{
+
 }
