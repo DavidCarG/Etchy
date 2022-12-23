@@ -13,12 +13,20 @@ body{
     height: 600px;
 }
 
+.row{
+    display: flex;
+}
+
 .grid{
-    background-color: black;
+    background-color: white;
     height: 450px;
-    width: 452px;
-    margin-right: -525px;
+    width: 450px;
+    margin-right: -523px;
     margin-top: 36px;
+}
+
+.square{
+    
 }
 
 .controlers{
@@ -31,3 +39,8 @@ body{
 .right-controler{
     height: 100px;
 }
+
+.rotate {
+    border-radius: 50%;
+    cursor: ns-resize;
+  }
