@@ -193,8 +193,36 @@ const rotate = (EL) => {
     };
   
     EL.addEventListener("mousedown", mousedown);
-    document.addEventListener("mousemove", mousemove);
-    document.addEventListener("mouseup", mouseup);
+
+    let controler = document.querySelector('.left-controler');
+
+    controler.addEventListener("mousemove", mousemove);
+    controler.addEventListener("mouseup", mouseup);
   
   };
   document.querySelectorAll(".rotate").forEach(rotate);
+
+  //Grid painting
+  function paintGrid(elem, color){    
+    if(elem.buttons == 1){
+        if(elem.target.classList == 'square'){
+            let square = elem.target;    
+            square.style.backgroundColor = color;
+        }  
+    }else{
+        return;
+    }
+}
+
+let selectedColor = 'black';
+
+gridContainer.addEventListener('mousedown', event =>{ 
+    paintGridEvent = paintGrid(event, selectedColor);
+    console.log("Im here");
+    if(event.buttons == 1){        
+        window.addEventListener('mouseover', (e) => {
+                paintGrid(e, selectedColor);          
+        });
+    }
+});
+
