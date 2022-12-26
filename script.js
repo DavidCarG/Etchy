@@ -226,3 +226,10 @@ gridContainer.addEventListener('mousedown', event =>{
     }
 });
 
+
+//Color picker controler
+const colorPick = document.querySelector('#colorPicker');
+
+colorPick.addEventListener('change',(e)=>{
+    selectedColor = e.target.value;
+});
