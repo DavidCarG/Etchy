@@ -1,3 +1,8 @@
+html{
+    background: url('./img/crayonBackground.png');
+    background-size: cover;
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -11,18 +16,25 @@ body{
 
 .toy-body{
     height: 600px;
+    pointer-events: none;
+}
+
+.row{
+    display: flex;
 }
 
 .grid{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: white;
     height: 450px;
     width: 450px;
-    margin-right: -525px;
+    margin-right: 4px;
     margin-top: 36px;
+    z-index: 1;
+    position: absolute;
+}
+
+.square{
+    
 }
 
 .controlers{
@@ -36,10 +48,33 @@ body{
     height: 100px;
 }
 
-.row{
-    display: flex;
+.rotate {
+    border-radius: 50%;
+    cursor: ns-resize;
+  }
+
+/*Color picker style*/
+input[type='color']:active {
+  transition: transform 0.05s ease-in-out;
+  transform: scale(1);
 }
 
-.square{
+input[type='color'] {
+    -webkit-appearance: none;
+    width: 90px;
+    height: 90px;
+    margin-right: 25px;
+    margin-top: 5px;
+    border-radius: 50px;
+    border: none;
+}
 
+input[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type='color']::-webkit-color-swatch {
+  border: none;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
