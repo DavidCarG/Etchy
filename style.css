@@ -1,3 +1,8 @@
+html{
+    background: url('./img/crayonBackground.png');
+    background-size: cover;
+}
+
 body{
     display: flex;
     justify-content: center;
