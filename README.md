@@ -1,1 +1,1 @@
-# Etchy
+This is a basic project that emulates the classic etch-a-sketch toy.
